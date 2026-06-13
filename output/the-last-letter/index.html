@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Last Letter</title>
+  <style>
+    :root {
+      --paper: #f5ecd9;
+      --ink: #1e1a17;
+      --muted: #5f564d;
+      --panel: #fbf6ea;
+      --line: rgba(30, 26, 23, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top, rgba(255,255,255,0.65), transparent 32%),
+        linear-gradient(180deg, #efe2c7 0%, var(--paper) 100%);
+      min-height: 100vh;
+    }
+
+    .texture {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.08;
+      background-image:
+        linear-gradient(0deg, transparent 24%, rgba(0, 0, 0, 0.08) 25%, transparent 26%),
+        linear-gradient(90deg, transparent 24%, rgba(0, 0, 0, 0.05) 25%, transparent 26%);
+      background-size: 4px 4px;
+    }
+
+    main {
+      width: min(100%, 900px);
+      margin: 0 auto;
+      padding: 40px 18px 80px;
+      position: relative;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .dek {
+      max-width: 700px;
+      margin: 12px auto 0;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    .page {
+      margin: 0 0 26px;
+      padding: 14px;
+      background: rgba(251, 246, 234, 0.92);
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    .page img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #f8f1df;
+    }
+
+    .caption {
+      padding: 14px 6px 2px;
+      text-align: center;
+      line-height: 1.65;
+      font-size: 1.05rem;
+    }
+
+    .page-num {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 0.8rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .caption strong {
+      font-weight: 700;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 18px 20px;
+      border: 1px solid var(--line);
+      background: rgba(255, 251, 243, 0.9);
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 0.98rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="texture"></div>
+  <main>
+    <header>
+      <h1>The Last Letter</h1>
+      <p class="dek">A fictionalised manga one-shot inspired by Taishanese migration, qiaopi remittance letters, and clan associations. Read top to bottom in a single vertical scroll.</p>
+    </header>
+
+    <section class="page">
+      <img src="./images-bubbles/page-01.png" alt="Page 1 of The Last Letter">
+      <div class="caption"><span class="page-num">Page 1</span>The Visit</div>
+    </section>
+
+    <section class="page">
+      <img src="./images-bubbles/page-02.png" alt="Page 2 of The Last Letter">
+      <div class="caption"><span class="page-num">Page 2</span>The Box</div>
+    </section>
+
+    <section class="page">
+      <img src="./images-bubbles/page-03.png" alt="Page 3 of The Last Letter">
+      <div class="caption"><span class="page-num">Page 3</span>The Promise</div>
+    </section>
+
+    <section class="page">
+      <img src="./images-bubbles/page-04.png" alt="Page 4 of The Last Letter">
+      <div class="caption"><span class="page-num">Page 4</span>Nanyang</div>
+    </section>
+
+    <section class="page">
+      <img src="./images-bubbles/page-05.png" alt="Page 5 of The Last Letter">
+      <div class="caption"><span class="page-num">Page 5</span>Qiaopi</div>
+    </section>
+
+    <section class="page">
+      <img src="./images-bubbles/page-06.png" alt="Page 6 of The Last Letter">
+      <div class="caption"><span class="page-num">Page 6</span>Waiting</div>
+    </section>
+
+    <section class="page">
+      <img src="./images-bubbles/page-07.png" alt="Page 7 of The Last Letter">
+      <div class="caption"><span class="page-num">Page 7</span>Silence</div>
+    </section>
+
+    <section class="page">
+      <img src="./images-bubbles/page-08.png" alt="Page 8 of The Last Letter">
+      <div class="caption"><span class="page-num">Page 8</span>No News</div>
+    </section>
+
+    <section class="page">
+      <img src="./images-bubbles/page-09.png" alt="Page 9 of The Last Letter">
+      <div class="caption"><span class="page-num">Page 9</span>The Last Letter</div>
+    </section>
+
+    <section class="page">
+      <img src="./images-bubbles/page-10.png" alt="Page 10 of The Last Letter">
+      <div class="caption"><span class="page-num">Page 10</span>The Unfinished Story</div>
+    </section>
+
+    <footer>
+      This is a fictional story, not a verified account of one real family. It is inspired by the lived experience of Taishanese migration, qiaopi remittance letters, and the role of clan associations in preserving memory across generations.
+    </footer>
+  </main>
+</body>
+</html>
